@@ -29,10 +29,12 @@ Script to create a PDF which is a subset of the original PDF.
 
 Open Terminal where the **script** is present, make sure the script and the pdf file are in the ***same directory***.
 
+**Note :** when you give 6-13, it includes 6, 13 and all the numbers inbetween them. 
+
 ```
  $ python subset.py
 Enter the name of the pdf : osfatportions
-Enter the slicing : 1-3 6-13 16 19-20
+Enter the slicing : 1-3 6-13 16 19-20  
 Enter output filename : split
 Wait...
 Done.
