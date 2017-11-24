@@ -1,5 +1,5 @@
 # merger
-Script to merge PDFs ( Linux and macOS only )
+Script to merge PDFs ( Works on all platforms )
 
 ### Dependency
 
