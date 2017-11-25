@@ -5,21 +5,33 @@ except ImportError:
 import os
 
 
-path = input("Enter the path to the pdf files : ")
-output = input("Enter output filename : ")
+def pdf_merge_action(pdfs, output):
 
-os.chdir(path)
+    print('Wait...')
+    merger = PdfFileMerger()
 
-pdfs = [f for f in os.listdir(path) if f.endswith('.pdf')]
+    for pdf in pdfs:
+        merger.append(open(pdf, 'rb'))
 
-print('Wait...')
+    with open('{}.pdf'.format(output), 'wb') as fout:
+        merger.write(fout)
+    print('Done xD')
 
-merger = PdfFileMerger()
 
-for pdf in pdfs:
-    merger.append(open(pdf, 'rb'))
+def gather_info():
 
-with open('{}.pdf'.format(output), 'wb') as fout:
-    merger.write(fout)
+    path = input("Enter the path to the pdf files : ")
+    os.chdir(path)
+    output = input("Enter output filename : ")
+    pdfs = [f for f in os.listdir(path) if f.endswith('.pdf')]
+    return path, output, pdfs
 
-print('Done xD')
+
+def main():
+
+    path, output, pdfs = gather_info()
+    pdf_merge_action(pdfs, output)
+
+
+if __name__ == '__main__':
+    main()
