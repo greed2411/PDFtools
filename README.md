@@ -34,8 +34,12 @@ Open Terminal where the **script** is present, make sure the script and the pdf 
 ```
  $ python subset.py
 Enter the name of the pdf : osfatportions
-Enter the slicing : 1-3 6-13 16 19-20  
-Enter output filename : split
+Enter the slicing : 1-3 6-13 16 19-20
+Enter output filename : splitted
 Wait...
+Processing 498 pages...
+Returning 14 pages...
 Done.
+ $ 
+
 ```
