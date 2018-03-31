@@ -5,6 +5,7 @@ A set of scripts which make handling PDFs easier. Works on all platforms. Tested
 ### Dependency
 
   * [PyPDF2](https://pypi.python.org/pypi/PyPDF2/1.26.0) v1.26.0 - To read and merge the PDFs.
+  * [img2pdf](https://pypi.python.org/pypi/img2pdf) v0.2.4 - To read images and merge as PDF.
 
 ## merger
 Script to merge PDFs
@@ -42,4 +43,21 @@ Returning 14 pages...
 Done.
  $ 
 
+```
+
+## images2pdf
+
+Script to create a PDF with all the images in the current working directory.
+
+### Usage
+
+Open Terminal where the **script** and the **images** are present and run the *images2pdfgenereator.py*
+
+**Note:** script supports both .jpg and .png formats only. Haven't tested with any other formats.
+
+```
+λ python images2pdfgenerator.py
+Enter output filename: test
+Done.
+λ
 ```
