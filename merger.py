@@ -24,6 +24,7 @@ def gather_info():
     os.chdir(path)
     output = input("Enter output filename : ")
     pdfs = [f for f in os.listdir(path) if f.endswith('.pdf')]
+    pdfs.sort()
     return path, output, pdfs
 
 
