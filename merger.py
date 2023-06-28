@@ -1,5 +1,5 @@
 try : 
-    from PyPDF2 import PdfFileMerger
+    from PyPDF2 import PdfMerger
 except ImportError:
     raise ImportError('** Install PyPDF2 **')
 import os
@@ -8,7 +8,7 @@ import os
 def pdf_merge_action(pdfs, output):
 
     print('Wait...')
-    merger = PdfFileMerger()
+    merger = PdfMerger()
 
     for pdf in pdfs:
         merger.append(open(pdf, 'rb'))

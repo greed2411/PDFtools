@@ -1,11 +1,6 @@
 # PDFtools
 
-A set of scripts which make handling PDFs easier. Works on all platforms. Tested on **Ubuntu 16.10** and **Win 7 32 bit SP1** with **Python 3.6.0 | Anaconda 4.3.1**
-
-### Dependency
-
-  * [PyPDF2](https://pypi.python.org/pypi/PyPDF2/1.26.0) v1.26.0 - To read and merge the PDFs.
-  * [img2pdf](https://pypi.python.org/pypi/img2pdf) v0.2.4 - To read images and merge as PDF.
+A set of scripts which make handling PDFs easier. Works across all platforms. Tested on **Pop! OS 20.04** and **Python 3.8.11**.
 
 ## merger
 Script to merge PDFs
